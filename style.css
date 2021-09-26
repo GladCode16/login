@@ -1,0 +1,77 @@
+html{
+    background: url(Background.jpg.jpg) no-repeat no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 87%;
+}
+body{
+    /* font-family: 'Ubuntu', sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    margin-bottom: 38px;
+    border-bottom: 4px solid rgb(255, 127, 255);
+}
+
+::placeholder{
+    color: white
+}
+#email{
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+.password{
+    border-bottom: 4px solid rgb(255, 127, 255);
+}
+#password{
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+.line{
+    display: none;
+    position: absolute;
+    right: 41vw;
+    top: 55.0vh;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(317deg);;
+}
+
+.Btn{
+    display: flex;
+    position: absolute;
+    top: 66vh;
+}
+#submitBtn{
+    cursor: pointer;
+    padding: 11px 28px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+}
+#submitBtn:hover{
+    background-color: #845461;
+    color: rgb(255, 255, 255);
+    border:1px solid rgb(196, 196, 196);
+}

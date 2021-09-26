@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+<body >
+    <!-- <form action="#" id="login"> -->
+        <div class="container">
+            <div class="inlog">
+                <!-- <i class="fas fa-user" style="filter: invert(100%);"></i> -->
+                <div class="email">
+                    <i class="fas fa-envelope" style="filter: invert(100%);"></i>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="password">
+                    <i class="fas fa-lock" style="filter: invert(100%);"></i>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <div class="line" onclick="seen()"></div>
+                    <i class="fas fa-eye" onclick="seen()" style="color: white; margin: 10px;" id="eye"></i>
+                </div>
+            </div>
+            <div class="Btn">
+                <a href="./sumbitPage.html"><div><button id="submitBtn">Submit</button></div></a>
+            </div>
+        </div>
+</body>
+<script>
+    const passBtn = document.querySelector('#eye');
+    const hidePassBtn = document.querySelector('.line')
+    const password = document.querySelector('#password')
+    function seen() {
+        if (password.type != 'text' && hidePassBtn.style.display == 'none') {
+            password.type = 'text';
+            hidePassBtn.style.display = 'block';
+        }else{
+            password.type = 'password'
+            hidePassBtn.style.display = 'none';
+        }
+    }
+</script>
+</html>
